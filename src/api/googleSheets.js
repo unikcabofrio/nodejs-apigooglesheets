@@ -47,7 +47,7 @@ async function GetDataSheet(sheet) {
         const ulr = sheet_url.replace('::ID', sheet_id)
 
 
-        const response = await fetch(`${ulr}?sheet=${sheet}`);
+        const response = await fetch(`${ulr}?sheet=${sheet}`,{timeout: 15000});
         const values = await response.json();
         const data = []
         values.jsonData.forEach(element => {
