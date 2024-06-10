@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js",
+    "vercel-build": "node src/server.js",
     "dev": "node --watch --no-warnings src/server.js"
   },
   "keywords": [],

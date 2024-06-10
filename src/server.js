@@ -86,5 +86,5 @@ serve.listen({
     if (err) throw err
     console.log(`\nHTTP server running`);
 
-    GetUpdate().then(() => { })
+    GetUpdate().then(() => {})
 })
